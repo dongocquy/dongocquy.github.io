@@ -1,0 +1,426 @@
+/* This style file has been created automatically per your request.
+
+The following pages can help you get started with CSS:
+* CSS Tutorial (http://w3schools.com/css/default.asp)
+* CSS3 Tutorial (http://w3schools.com/css3/default.asp)
+* CSS Reference (http://w3schools.com/cssref/default.asp) */
+
+body
+{
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 8px;
+  color: black;
+  line-height: 1.5;
+}
+
+/* Import font from Google Web Fonts */
+
+ 
+@font-face 
+{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v10/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+a
+{
+  color: #795548;
+}
+
+a:visited
+{
+  color: #B2A089;
+}
+
+a:hover
+{
+  color: #3E342E;
+  text-decoration: none;
+}
+
+a:active
+{
+  color: #6D4C41;
+}
+
+a img
+{
+  border:0;
+}
+
+h1
+{
+  font-family: 'Oswald', sans-serif;
+  color: #FAFAFA;
+  background-color: #795548;
+  font-weight:100;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin:0;
+}
+
+h2
+{
+  color: #232323;
+  font-family: 'Oswald', sans-serif;  
+  text-align: left;  
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-size:25px;
+  }
+
+ul
+{
+  list-style-image: url('../Images/bullet.png');
+  padding-left: 40px;
+}
+
+ul li
+{
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  vertical-align: middle;
+}
+
+ol
+{
+  padding-left: 40px;
+}
+
+ol li
+{
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* --- Custom classes --- */
+
+.screenshot
+{
+  box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.75);
+}
+
+/* Start Page */
+
+.startHeader
+{
+  margin: 0;
+  padding: 10px;
+  background: #795548 url('../Images/startbanner.png') no-repeat left top;
+  font-size: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 25px;
+}
+
+@media (max-width: 767px)
+{ /* Landscape phone to portrait tablet */
+  .startHeader
+  {
+    background-image: none;
+  }
+}
+
+.startTable
+{
+  padding: 10px;
+  padding-top: 0;
+}
+
+.startTable:after
+{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.startTable h2
+{
+  padding-top: 0;
+  padding-left: 25px;
+  border: 0px none;
+  background: transparent none;  
+}
+
+.startColumn
+{
+  float: left;
+  width: 33%;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+{ 
+  .startColumn
+  { /* One column per screen */
+    width:100%;
+  }
+}
+
+/* Footer elements */
+
+.footer
+{
+  background: #F0E3C6;
+}
+
+.footerInner
+{
+  font-size: 12px;
+  padding: 8px;
+  color: #000;
+}
+
+.footer a
+{
+  color: #000;
+}
+
+/* Tables */
+/* CHTable is the CSS class assigned to all tables by default. Use the styles below to customize the default tables appearance */
+
+.CHTable
+{
+  font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	text-align: left;
+	border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #EFEBE9;
+}
+
+.CHTable th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	color: #37474F;
+  letter-spacing: 1px;
+  background: #F0E3C6;
+}
+
+.CHTable td
+{
+	padding: 8px;
+	color: #333;
+  border-right: 1px solid #EFEBE9;
+	border-left: 1px solid #EFEBE9;
+}
+
+.CHTable tr:nth-child(even)
+{
+	background: #F0E3C6; 
+}
+
+/* Simple table */
+
+.tableSimple
+{
+  font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #6D4C41;
+}
+
+.tableSimple th
+{
+	padding: 15px 10px 10px 10px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #4E342E;
+  text-align:left;
+  letter-spacing: 1px;
+}
+
+.tableSimple tbody
+{
+	background: white;
+}
+
+.tableSimple td
+{
+	padding: 10px;
+	color: #424242;
+	border-top: 1px solid #BDBDBD;
+  text-align: left;
+}
+
+.tableSimple tfoot td
+{
+	text-align:left;
+}
+
+.tableSimple tbody tr:hover td
+{
+	color: #424242;
+	background: #F0E3C6;
+}
+
+/* Table with both rows and columns having odd/even styles */
+
+.tableVerZebra
+{
+  font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	text-align: left;
+	border-collapse: collapse;
+  background: #F0E3C6;
+  color: #212121;
+}
+
+.tableVerZebra a 
+{
+ color: #212121; 
+}
+
+.tableVerZebra th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 12px 15px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+  letter-spacing: 1px;
+  background: #F0E3C6;
+  color: #212121;
+}
+
+.tableVerZebra tr:nth-child(odd)
+{
+	background: #6D4C41;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.tableVerZebra td
+{
+	padding: 8px 15px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff; 
+}
+
+.tableVerZebra tfoot td
+{
+  background: #F0E3C6;
+  color: #212121;
+}
+
+/* Info Box */
+.infoBox
+{
+  width: 100%;
+  font-size: 0.8em;  
+  border: 5px solid #F0E3C6;
+}
+
+.infoBox p:last-child 
+{
+    margin-bottom: 0;
+}
+
+.infoBox p
+{
+    margin-top: 0;
+}
+
+.infoBoxImageCell
+{
+  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 28px; 
+}
+
+.infoBoxText
+{
+  padding: 8px;
+}
+
+.warningBox
+{
+  width: 100%;
+  font-size: 0.8em;  
+  border: 5px solid #F0E3C6;
+}
+
+.warningBox p:last-child 
+{
+    margin-bottom: 0;
+}
+
+.warningBox p
+{
+    margin-top: 0;
+}
+
+.warningBoxImageCell
+{
+  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 28px;  
+}
+
+.warningBoxText
+{
+  padding: 8px;
+}
+
+/* Navigation elements */
+
+.CHNavLinkTop
+{
+}
+
+.CHNavLinkNext
+{
+}
+
+.CHNavLinkPrevious
+{
+}
+
+.CHSeeAlso
+{
+}
+
+.CHBreadcrumb
+{
+}
+
+/* FAQ */
+
+.faqQuestionText
+{
+  background: #F0E3C6;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.faqAnswer
+{
+  color: #424242;
+  padding-left: 10px;
+}
