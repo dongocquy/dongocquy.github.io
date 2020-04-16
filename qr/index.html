@@ -3,6 +3,7 @@
 <head>
 	<title>dongocquy.com - QR Scanner</title>
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="instascan.min.js"></script>
 </head>
@@ -18,7 +19,7 @@
       });
       Instascan.Camera.getCameras().then(function (cameras) {
         if (cameras.length > 0) {
-          scanner.start(cameras[0]);
+          scanner.start(cameras[1]);
         } else {
           console.error('No cameras found.');
         }
