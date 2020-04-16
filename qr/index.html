@@ -10,8 +10,9 @@
 <body>
   
     <h1>QR Scanner</h1>
-    
-    <video id="preview"></video>
+    <div class="text-center">
+		<video id="preview"></video>
+	</div>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
       scanner.addListener('scan', function (content) {
