@@ -2,7 +2,10 @@
 body {
     background: transparent;
 }
-
+@font-face {
+   font-family: digital-7;
+   src: url(digital-7.ttf);
+}
 .clock {
     position: absolute;
     top: 50%;
@@ -10,14 +13,11 @@ body {
     transform: translateX(-50%) translateY(-50%);
     color: #000000;
     font-size: 60px;
-    font-family: Orbitron;
+    font-family: digital-7;
     letter-spacing: 7px;
-   
-
-
 }
 </style>
-<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+<b><div id="MyClockDisplay" class="clock" onload="showTime()"></div></b>
 <script>
 function showTime(){
     var date = new Date();
